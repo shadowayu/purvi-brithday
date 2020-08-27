@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+	<title>Login</title>
+	<style>
+	#form
+	{
+		font-family:Comic Sans MS;
+		font-size:16px;
+		border:2px solid;
+		position:absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		//z-index: 10;
+		width: 35%;
+		padding:20px 30px;
+		//text-align: center;
+		background:rgba(0,0,0,.5);
+	}
+	*{
+		box-sizing: border-box;
+	}	
+	.background
+	{
+		position: fixed;
+		left:0;
+		right:0;
+		background-image:url("mumbai_shadab.jpg");
+		background-repeat:no-repeat;
+		width:100%;
+		height:100%;
+		background-size:cover;
+		-webkit-filter:blur(2px);
+		
+	}
+	#form input[type="text"],
+	#form input[type="password"]
+	{
+		border:none;
+		border-bottom:1px solid #fff;
+		background:transparent;
+		height:30px;
+		margin-bottom:5%;
+	}
+	#form input[type="submit"]
+	{
+		height:30px;
+		color:white;
+		background:red;
+		border-radius:25px;
+		border:none;
+		width:100%;
+		cursor:pointer;  //it gives finger
+		outline:none;
+		margin-top:10%;  //it gives blank space above the button
+		
+	}
+	</style>
+</head>
+<body>
+	<div class="background"></div>
+	<div id="form">
+	<h1 align="center" style="font:Times New Roman; color:Red; font-style:italic;">Welcome there!!</h1>
+	<form>
+	<p>Username : <br><br><input type="text" name="user" value="enter your name" onfocus="this.value=''"></p>
+	<P>Password : <br><br><input type="password" name="pass" placeholder="enter password"></p>
+	<p id="para4">
+		In the dark blue sky you keep,<br>
+		And often through my curtains peep,<br>
+		For you never shut your eye,<br>
+		‘Till the sun is in the sky.<br>
+		<p><input type="checkbox" name="check">Remember Me</p>
+		<p><input type="submit" name="login" value="login"></p>
+	</p>
+	</form>
+	</div>
+</body>
+</html>

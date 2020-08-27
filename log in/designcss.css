@@ -1,0 +1,181 @@
+@import
+url('http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext');
+
+
+header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #232323;
+  display: inline-block;
+  height: 180px;
+  padding:10px 0;
+  width: 100vw;
+  left: 0;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 1;
+  transition: top 0.3s linear ;
+}
+
+
+nav ul{
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: fit-content;
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  float: left;
+  list-style: none;
+  margin: 1em;
+  padding: 0 16px;
+}
+
+nav a{
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #fff;
+
+
+}
+nav a:hover,
+nav a:focus{
+  color: #DDD;
+}
+
+
+@media (max-width:600px) {
+  .logo{
+    font-size: 3.7rem;
+  }
+
+  img.logo{
+    margin: 10px 0;
+    width: 140px;
+  }
+
+  nav li{
+    padding: 0 7px;
+  }
+}
+
+@media only screen and (min-width:1000px){
+  img.logo{
+      margin: 10px 0;
+      width: 120px;
+      padding: 0px 0px 0px 20px;
+      border-right: 4px solid #fff;
+      text-align: left;
+      float: left;
+  }
+  header{
+    height: 100px;
+    text-align: left;
+    float: left;
+    z-index: 1;
+    transition: top 0.3s linear ;
+  }
+nav ul{
+    margin: 20px 0px;
+    float: left;
+  }
+nav a{
+    font-weight: 600;
+      }
+  }
+
+
+body{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../img/login.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.login-page{
+  width: 360px;
+  padding: 10% 0 0;
+  margin: auto;
+}
+
+img.form{
+  margin: 5px 0px;
+  padding-top: 0px auto;
+  top: 0;
+}
+
+h3{
+  font-weight: 400;
+  font-size: 22px;
+  text-decoration: none;
+}
+span{
+  font-weight: 250;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.form{
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+}
+
+.form input{
+  font-family: "Lato";
+  outline: 1;
+  border: 0;
+  width: 100%;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 15px;
+  background: #f2f2f2;
+}
+
+.form button{
+  text-transform: uppercase;
+  outline: 0;
+  width: 100%;
+  border-width:2px;
+  border-style: solid;
+  padding: 15px 15px;
+  color: black;
+  background: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form button:hover,.form button:active{
+  background: #5D83FF;
+  color: #fff;
+}
+
+.form .message{
+  margin: 15px 0 0 ;
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
+
+}
+
+.form .message a{
+  color:#5D83FF ;
+  text-decoration: none;
+
+}
+
+.form .register-form{
+  display:none;
+
+}
